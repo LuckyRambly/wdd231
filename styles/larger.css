@@ -1,8 +1,8 @@
 :root {
-    --primary-color: #01B1A0;
-    --secondary-color: #DC6505;
-    --primarysad-color: #1A726A;
-    --secondarysad-color: #DF731C;
+    --primary-color: blue;
+    --secondary-color: orange;
+    --primarysad-color: darkblue;
+    --secondarysad-color: darkorange;
     --boredgray-color: #333333;
 }
 @media (min-width: 768px) { 
