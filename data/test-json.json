@@ -1,0 +1,28 @@
+{
+  "family_name": "Lamas",
+  "move_in_date": "2017-03-14",
+  "number_of_people": 4,
+  "visited_by_bishopric": true,
+  "family_members": [
+    {
+      "name": "Ramon Lamas Vazquez",
+      "gender": "Male",
+      "birthdate": "1970-10-19"
+    },
+    {
+      "name": "Monica Romero",
+      "gender": "Female",
+      "birthdate": "1971-01-13"
+    },
+    {
+      "name": "Rodrigo Lamas",
+      "gender": "Male",
+      "birthdate": "2009-09-21"
+    },
+    {
+      "name": "Ramon Lamas",
+      "gender": "Male",
+      "birthdate": "2002-10-26"
+    }
+  ]
+}
