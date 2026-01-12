@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Directorio | Cámara de Comercio de Caracas</title>
+    <link rel="stylesheet" href="styles/normalize.css"> <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/HHHHHHHHH">
+    <meta name="description" content="Directorio de empresas y negocios afiliados a la Cámara de Comercio de Caracas. Encuentre servicios, contactos y oportunidades en la capital.">
+    <meta name="author" content="Ramón Lamas">
+    <link rel="icon" href="images/favicon.ico" sizes="16x16">
+    <meta property="og:title" content="Directorio de la Cámara de Comercio de Caracas">
+    <meta property="og:description" content="Consulte el listado oficial de nuestros miembros. Un directorio exclusivo de negocios y servicios en Caracas, Venezuela.">
+    <meta property="og:url" content="https://luckyrambly.github.io/wdd231/chamber/directory.html">
+    <meta property="og:image" content="https://raw.githubusercontent.com/LuckyRambly/wdd231/refs/heads/main/chamber/images/og-directory-preview.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+</head>
+<body>
+
+    <header>
+    <div class="header-content">
+        <div class="logo-area">
+            <img src="images/logo-placeholder.png" alt="Logo de la Cámara de Comercio de Caracas" class="logo">
+            
+            <h1 class="site-title">Cámara de Comercio de Caracas</h1>
+        </div>
+        
+        <div class="utility-area">
+            <button id="modeToggle" aria-label="Cambiar modo claro/oscuro">🌙</button>
+            
+            <button id="menuButton" aria-label="Abrir menú de navegación">☰</button>
+        </div>
+        
+        <nav>
+            <ul class="navigation-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Discover</a></li>
+                <li><a href="directory.html" class="active">Business Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Podcast</a></li>
+                <li><a href="#">Events</a></li>
+            </ul>
+        </nav>
+        
+    </div>
+</header>
+<main class="directory-main">
+
+    <section class="directory-controls">
+        <h2>Directorio de Empresas Afiliadas</h2>
+        <div class="view-toggle">
+            <button id="gridView" class="active" title="Mostrar como Tarjetas">
+                <span role="img" aria-label="Icono de Tarjeta">❐</span> 
+            </button>
+            <button id="listView" title="Mostrar como Lista">
+                <span role="img" aria-label="Icono de Lista">≡</span>
+            </button>
+        </div>
+    </section>
+
+    <section id="memberContainer" class="member-display-grid">
+        
+        <div class="member-card">
+            <h3>[Business Name]</h3>
+            <p class="tagline">Business Tag Line</p>
+            <img src="images/business-placeholder.png" alt="Logo de Business Name">
+            <p>EMAIL: info@gmail.com</p>
+            <p>PHONE: 000-000-0000</p>
+            <p>URL: mybusiness.com</p>
+        </div>
+
+        </section>
+
+</main>
+<footer>
+    <div class="footer-grid">
+        
+        <div class="footer-contact">
+            <h2>Cámara de Comercio de Caracas</h2>
+            <p>Av. Francisco de Miranda, La California Norte</p>
+            <p>Teléfono: 0000-000-0000</p>
+            <p>Correo: hipotetico@ficcion.pergamino</p>
+            
+            <div class="social-links">
+                <a href="#" aria-label="YouTube"><img src="images/icon-youtube.svg" alt="YouTube"></a>
+                <a href="#" aria-label="Twitter"><img src="images/icon-twitter.svg" alt="Twitter"></a>
+                <a href="#" aria-label="LinkedIn"><img src="images/icon-linkedin.svg" alt="LinkedIn"></a>
+            </div>
+        </div>
+        
+        <div class="footer-project-info">
+            <p>[Tu Nombre] Class Project</p>
+            <p>&copy; 2024 Cámara de Comercio de Caracas</p>
+            <p>Última Modificación: [Fecha y Hora Actual]</p>
+        </div>
+        
+        <script>
+            // 1. Generar el año actual para el copyright
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+            // 2. Generar la fecha de la última modificación del documento
+            // Obtiene la fecha y hora de la última modificación del archivo
+            let lastModifiedDate = document.lastModified;
+            
+            // Formatea la fecha y la inserta en el elemento con ID 'lastModified'
+            document.getElementById('lastModified').textContent = lastModifiedDate;
+        </script>
+    </div>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+* {
+    font-family: josefin-sans, sans-serif;
+}
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 5px 0 5px 10px;
+    column-gap: 10px;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+header img {
+    width: 100%;
+    height: auto;
+}
+header span {
+    font-size: 1.2rem;
+    color: black;
+}
+.hamburger {
+    background-color: none;
+    border: none;
+    cursor: pointer;
+}
+.hamburger::before {
+    content: "\2630";
+}
+.hamburger.show::before {
+    content: "\00D7";
+}

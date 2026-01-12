@@ -3,9 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>WDD 231 - Ramón Lamas</title>
+    <meta name="description" content="Main page for WDD 231 and the chamber of commerce project.">
+    <meta name="author" content="Ramón Lamas">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap"> <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 768px)"> 
+    <link rel="icon" href="images/favicon2.ico">
+    <!-- Facebook Open Graph Properties -->
+    <meta property="og:title" content="Index for WDD231 - Ramon Lamas">
+    <meta property="og:description" content="Main hub for all the learning activities, projects and more for WDD 231">
+    <meta property="og:image" content="https://raw.githubusercontent.com/LuckyRambly/wdd231/main/images/FB-OGP-placeholder.webp">
+    <meta property="og:url" content="https://luckyrambly.github.io/wdd231">
+    <!-- End of Facebook OG Properties-->
+    <script src="scripts/burgerButton.js" defer></script>
+    <script src="scripts/CopyAndModif.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
 </head>
 <body>
-    <h1>Hello World</h1>
+    <header>
+        <img src="images/cat.svg" alt="site-logo" width="48" height="48">
+        <span>Ramón Lamas</span>
+        <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+        <nav class="main-nav"> 
+            <a href="index.html">Home</a>
+            <a href="#">Chamber Project</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Home</h1>
+        <div class="top-sections-grid"> 
+            <section class="about-me-section"> <h2>About me</h2>
+                <p>Hi, I am Ramón Lamas, I live in Venezuela, I have 23 years old and I'm studying software development because I like computers and what you can do with them, I like videogames, see youtube videos, draw all kind of stuff and I want to make my own youtube channel in a future.</p>
+            </section>
+            <section class="student-photo-section"> <h2>Student Photo</h2>
+                <img src="images/ramon_portrait.jpg" alt="Picture of Ramón Lamas" width="240" height="240">
+            </section>
+        </div>
+        
+        <section class="courses-section"> <h2>Web Certificate Courses</h2>
+            <div class="course-filters">
+                <button id="allCourses" class="filter-btn active">All Courses</button>
+                <button id="wddCourses" class="filter-btn">WDD Courses</button>
+                <button id="cseCourses" class="filter-btn">CSE Courses</button>
+            </div>
+            <div id="course-list" class="course-grid">
+            </div>
+            <p class="total-credits-display">Total Credits Displayed: <span id="total-credits">0</span></p>
+        </section>
+    </main>
+    <footer>
+        <section class="social-media-links"> <a href="https://github.com/LuckyRambly">
+                <img src="images/icons8-github.svg" alt="Github Icon" width="48" height="48">
+            </a>
+            <a href="https://www.linkedin.com/in/ramon-lamas-132a27280/">
+                <img src="images/icons8-linkedin.svg" alt="LinkedIn Icon" width="48" height="48">
+            </a>
+            <a href="https://x.com/MyLuckySylveon">
+                <img src="images/icons8-x.svg" alt="X Icon" width="48" height="48">
+            </a>
+            <a href="https://www.reddit.com/user/Ramon_Rayo_UwU/">
+                <img src="images/icons8-reddit.svg" alt="Reddit Icon" width="48" height="48">
+            </a>
+        </section>
+        <section class="footer-info"> <p>©<span id="currentyear"></span> Ramón Lamas, Venezuela</p>
+            <p id="lastModifiedPara">Last Modified: <span id="lastModified"></span></p> </section>
+    </footer>
 </body>
 </html>

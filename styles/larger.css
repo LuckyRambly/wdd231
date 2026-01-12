@@ -1,0 +1,89 @@
+:root {
+    --primary-color: #ffa600;
+    --secondary-color: red;
+    --primarybrother-color: aqua;
+    --secondarybrother-color: blue;
+    --boredgray-color: gray;
+}
+@media (min-width: 768px) { 
+    header {
+        grid-template-columns: 48px auto auto; 
+        justify-content: space-between; 
+        padding: 10px 5%; 
+    }
+    header span {
+        justify-self: start; 
+    }
+    .hamburger {
+        display: none;
+    }
+    .main-nav {
+        grid-column: auto; 
+        display: flex; 
+        flex-direction: row;
+        background-color: transparent; 
+        border-top: none; 
+        padding: 0;
+        justify-self: end; 
+        max-height: none; 
+        opacity: 1;
+        overflow: visible; 
+        transition: none;
+    }
+    .main-nav a {
+        padding: 10px 15px;
+        border-bottom: none; 
+        border-radius: 5px; 
+    }
+    .main-nav a:hover {
+        background-color: darkorange; 
+    }
+    .main-nav a[href="index.html"] {
+        background-color: var(--primary-color); 
+    }
+    main {
+        padding: 30px 5%; 
+    }
+    .top-sections-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr; 
+        gap: 30px; 
+        margin-bottom: 30px;
+    }
+    .about-me-section {
+        margin-bottom: 0;
+    }
+    .student-photo-section {
+        margin-bottom: 0; 
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .course-grid {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); 
+        gap: 20px;
+    }
+    .course-filters {
+        justify-content: flex-end;
+        gap: 15px;
+    }
+    .filter-btn {
+        flex-grow: 0;
+        max-width: none; 
+    }
+    /* Footer Layout*/
+    footer {
+        padding: 20px 5%;
+        text-align: center;
+    }
+    .social-media-links {
+        margin-bottom: 15px;
+    }
+    .footer-info {
+        text-align: center; 
+    }
+    .footer-info p {
+        margin: 5px 0; 
+    }
+}
