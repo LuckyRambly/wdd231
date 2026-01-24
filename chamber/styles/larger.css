@@ -1,28 +1,21 @@
-/* --- ESCRITORIO (Solo cambios sobre Small) --- */
-
-/* --- HEADER & LOGO --- */
 .header-content {
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
 }
-
 .logo-area {
     display: flex;
     align-items: center;
     gap: 15px;
     flex-shrink: 0;
 }
-
 .site-title {
     display: block;
     font-size: 1.4rem;
     margin: 0;
     white-space: nowrap;
 }
-
-/* --- NAV Y LINKS --- */
 nav {
     width: auto;
     margin: 0 auto;
@@ -30,38 +23,30 @@ nav {
     display: flex;
     align-items: center;
 }
-
 .navigation-links {
     display: flex !important;
     flex-direction: row;
     gap: 10px;
 }
-
 .navigation-links a {
     border: none;
     padding: 0.5rem 1rem;
     white-space: nowrap;
 }
-
-/* --- UTILIDADES Y BOTONES --- */
 .utility-area {
     display: flex;
     align-items: center;
     order: 3;
 }
-
 #modeToggle {
     font-size: 1.5rem;
     padding: 5px;
     display: flex;
     align-items: center;
 }
-
 #menuButton {
-    display: none; /* Adiós hamburguesa */
+    display: none;
 }
-
-/* --- DIRECTORIO --- */
 .directory-controls {
     display: flex;
     justify-content: space-between;
@@ -69,13 +54,11 @@ nav {
     max-width: 1200px;
     margin: 0 auto;
 }
-
 .member-display-grid { 
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
     max-width: 1200px; 
     margin: 0 auto; 
 }
-
 .member-display-list section { 
     display: grid; 
     grid-template-columns: 2fr 1fr 1fr; 
@@ -83,8 +66,6 @@ nav {
     margin: 0 auto; 
     text-align: left; 
 }
-
-/* --- FOOTER --- */
 .footer-grid { 
     display: grid; 
     grid-template-columns: 1fr 1fr; 
@@ -92,7 +73,6 @@ nav {
     margin: 0 auto; 
     text-align: left; 
 }
-
 .social-links { 
     justify-content: flex-start; 
 }

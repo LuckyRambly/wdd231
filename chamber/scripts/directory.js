@@ -3,7 +3,6 @@ const container = document.querySelector('#memberContainer');
 const gridBtn = document.querySelector('#gridView');
 const listBtn = document.querySelector('#listView');
 
-// 1. Obtener los datos del JSON
 async function getMembers() {
     try {
         const response = await fetch(url);
@@ -18,14 +17,12 @@ async function getMembers() {
     }
 }
 
-// 2. Dibujar los miembros en el HTML
 function displayMembers(members) {
-    container.innerHTML = ""; // Limpiar contenido previo
+    container.innerHTML = "";
 
     members.forEach((member) => {
         const card = document.createElement('section');
         
-        // Mapeo de niveles de membresía para mostrar texto en lugar de números
         const levels = { 1: "Miembro", 2: "Plata", 3: "Oro" };
 
         card.innerHTML = `
@@ -39,12 +36,10 @@ function displayMembers(members) {
             </div>
             <p class="membership-level">Nivel: ${levels[member.membershipLevel]}</p>
         `;
-        
         container.appendChild(card);
     });
 }
 
-// 3. Eventos para cambiar la vista (Toggle View)
 gridBtn.addEventListener('click', () => {
     container.classList.add('member-display-grid');
     container.classList.remove('member-display-list');
@@ -59,5 +54,4 @@ listBtn.addEventListener('click', () => {
     gridBtn.classList.remove('active');
 });
 
-// Ejecutar la función
 getMembers();

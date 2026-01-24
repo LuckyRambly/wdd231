@@ -1,33 +1,22 @@
-/* Reset básico para eliminar márgenes y paddings por defecto */
 *, *::before, *::after {
-    box-sizing: border-box; /* Ayuda a que los tamaños de las cajas sean exactos */
+    box-sizing: border-box; 
     margin: 0;
     padding: 0;
 }
-
 html {
-    -webkit-text-size-adjust: 100%; /* Evita cambios de tamaño de texto en iOS */
     line-height: 1.15;
 }
-
 body {
     min-height: 100vh;
-    text-rendering: optimizeSpeed;
 }
-
-/* Hacer que las imágenes sean responsivas por defecto */
 img, picture, video, canvas, svg {
     display: block;
     max-width: 100%;
     height: auto;
 }
-
-/* Eliminar estilos de lista (muy útil para el menú de navegación) */
 ul, ol {
     list-style: none;
 }
-
-/* Botones y formularios más limpios */
 button, input, select, textarea {
     font: inherit;
 }
