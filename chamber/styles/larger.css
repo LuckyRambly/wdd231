@@ -1,7 +1,5 @@
 .header-content {
     flex-wrap: nowrap;
-    justify-content: space-between;
-    align-items: center;
     padding: 0 20px;
 }
 .logo-area {
@@ -20,11 +18,9 @@ nav {
     width: auto;
     margin: 0 auto;
     background: none;
-    display: flex;
-    align-items: center;
 }
 .navigation-links {
-    display: flex !important;
+    display: flex !important; 
     flex-direction: row;
     gap: 10px;
 }
@@ -34,15 +30,11 @@ nav {
     white-space: nowrap;
 }
 .utility-area {
-    display: flex;
-    align-items: center;
     order: 3;
 }
 #modeToggle {
     font-size: 1.5rem;
     padding: 5px;
-    display: flex;
-    align-items: center;
 }
 #menuButton {
     display: none;
