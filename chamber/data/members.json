@@ -1,0 +1,92 @@
+[
+  {
+    "name": "Hacienda La Trinidad",
+    "address": "Calle Unión, Urb. Sorokaima, Caracas",
+    "phone": "+58 212-943-0521",
+    "website": "https://haciendalatrinidad.org",
+    "image": "logo_hacienda_trinidad.webp",
+    "membershipLevel": 3,
+    "tagline": "Cultura y arte en un entorno histórico."
+  },
+  {
+    "name": "Banesco Banco Universal",
+    "address": "Avenida Principal de Colinas de Bello Monte",
+    "phone": "+58 212-501-7111",
+    "website": "https://www.banesco.com",
+    "image": "logo_banesco.png",
+    "membershipLevel": 3,
+    "tagline": "Líder en banca y servicios financieros."
+  },
+  {
+    "name": "Pastelería Danubio",
+    "address": "Calle Guaicaipuro, Chacao",
+    "phone": "+58 212-263-1577",
+    "website": "https://pdanubio.com",
+    "image": "logo_panaderia_danubio.avif",
+    "membershipLevel": 2,
+    "tagline": "Tradición europea en el corazón de Caracas."
+  },
+  {
+    "name": "Ridery",
+    "address": "Av. Francisco de Miranda, Edif. Lido",
+    "phone": "+58 412-123-4567",
+    "website": "https://ridery.app",
+    "image": "logo_ridery.png",
+    "membershipLevel": 2,
+    "tagline": "La primera app de movilidad del país."
+  },
+  {
+    "name": "Farmatodo",
+    "address": "Calle Los Abedules, Urbanización La Florida",
+    "phone": "+58 800-327-6286",
+    "website": "https://www.farmatodo.com.ve",
+    "image": "logo_farmatodo.png",
+    "membershipLevel": 3,
+    "tagline": "Bienestar a tu alcance las 24 horas."
+  },
+  {
+    "name": "Restaurante Alto",
+    "address": "1era Av. de Los Palos Grandes",
+    "phone": "+58 212-284-3692",
+    "website": "https://altorestaurante.com",
+    "image": "logo_r_alto.jpeg",
+    "membershipLevel": 2,
+    "tagline": "Gastronomía venezolana de autor."
+  },
+  {
+    "name": "Synergy Caracas",
+    "address": "Centro Galipán, El Rosal",
+    "phone": "+58 212-951-4040",
+    "website": "https://synergy.ve",
+    "image": "logo_synergy_caracas.jpg",
+    "membershipLevel": 1,
+    "tagline": "Espacios de Coworking y Networking."
+  },
+  {
+    "name": "Cacao de Origen",
+    "address": "Secadero N° 5, Hacienda La Trinidad",
+    "phone": "+58 212-941-8548",
+    "website": "https://cacaodeorigen.com",
+    "image": "logo_cacao_origen.jfif",
+    "membershipLevel": 1,
+    "tagline": "El mejor chocolate fino de aroma."
+  },
+  {
+    "name": "Laser Airlines",
+    "address": "Av. Principal de La Castellana",
+    "phone": "+58 212-202-0100",
+    "website": "https://www.laserairlines.com",
+    "image": "logo_laser.svg",
+    "membershipLevel": 3,
+    "tagline": "Conectando a Venezuela con el mundo."
+  },
+  {
+    "name": "Librería El Buscón",
+    "address": "C.C. Paseo Las Mercedes, Nivel Trasnocho",
+    "phone": "+58 212-993-9343",
+    "website": "https://elbuscon.com.ve",
+    "image": "logo_libreria_buscon.jpg",
+    "membershipLevel": 1,
+    "tagline": "Libros para buscadores de tesoros."
+  }
+]
