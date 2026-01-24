@@ -6,7 +6,7 @@
     "website": "https://haciendalatrinidad.org",
     "image": "logo_hacienda_trinidad.webp",
     "membershipLevel": 3,
-    "tagline": "Cultura y arte en un entorno histórico."
+    "tagline": "Culture and art in a historic setting."
   },
   {
     "name": "Banesco Banco Universal",
@@ -15,7 +15,7 @@
     "website": "https://www.banesco.com",
     "image": "logo_banesco.png",
     "membershipLevel": 3,
-    "tagline": "Líder en banca y servicios financieros."
+    "tagline": "Leader in banking and financial services."
   },
   {
     "name": "Pastelería Danubio",
@@ -24,7 +24,7 @@
     "website": "https://pdanubio.com",
     "image": "logo_panaderia_danubio.avif",
     "membershipLevel": 2,
-    "tagline": "Tradición europea en el corazón de Caracas."
+    "tagline": "European tradition in the heart of Caracas."
   },
   {
     "name": "Ridery",
@@ -33,7 +33,7 @@
     "website": "https://ridery.app",
     "image": "logo_ridery.png",
     "membershipLevel": 2,
-    "tagline": "La primera app de movilidad del país."
+    "tagline": "The country's first mobility app."
   },
   {
     "name": "Farmatodo",
@@ -42,7 +42,7 @@
     "website": "https://www.farmatodo.com.ve",
     "image": "logo_farmatodo.png",
     "membershipLevel": 3,
-    "tagline": "Bienestar a tu alcance las 24 horas."
+    "tagline": "Wellness at your fingertips, 24 hours a day."
   },
   {
     "name": "Restaurante Alto",
@@ -51,7 +51,7 @@
     "website": "https://altorestaurante.com",
     "image": "logo_r_alto.jpeg",
     "membershipLevel": 2,
-    "tagline": "Gastronomía venezolana de autor."
+    "tagline": "Signature Venezuelan cuisine."
   },
   {
     "name": "Synergy Caracas",
@@ -60,7 +60,7 @@
     "website": "https://synergy.ve",
     "image": "logo_synergy_caracas.jpg",
     "membershipLevel": 1,
-    "tagline": "Espacios de Coworking y Networking."
+    "tagline": "Coworking and Networking Spaces."
   },
   {
     "name": "Cacao de Origen",
@@ -69,7 +69,7 @@
     "website": "https://cacaodeorigen.com",
     "image": "logo_cacao_origen.jfif",
     "membershipLevel": 1,
-    "tagline": "El mejor chocolate fino de aroma."
+    "tagline": "The finest aromatic chocolate."
   },
   {
     "name": "Laser Airlines",
@@ -78,7 +78,7 @@
     "website": "https://www.laserairlines.com",
     "image": "logo_laser.svg",
     "membershipLevel": 3,
-    "tagline": "Conectando a Venezuela con el mundo."
+    "tagline": "Connecting Venezuela with the world."
   },
   {
     "name": "Librería El Buscón",
@@ -87,6 +87,6 @@
     "website": "https://elbuscon.com.ve",
     "image": "logo_libreria_buscon.jpg",
     "membershipLevel": 1,
-    "tagline": "Libros para buscadores de tesoros."
+    "tagline": "Books for treasure hunters."
   }
 ]

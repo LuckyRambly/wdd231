@@ -10,10 +10,10 @@ async function getMembers() {
             const data = await response.json();
             displayMembers(data);
         } else {
-            console.error("Error al obtener los datos del JSON");
+            console.error("Error getting the JSON files");
         }
     } catch (error) {
-        console.error("Error de conexión:", error);
+        console.error("conexion error:", error);
     }
 }
 
@@ -23,18 +23,18 @@ function displayMembers(members) {
     members.forEach((member) => {
         const card = document.createElement('section');
         
-        const levels = { 1: "Miembro", 2: "Plata", 3: "Oro" };
+        const levels = { 1: "Member", 2: "Silver", 3: "Gold" };
 
         card.innerHTML = `
-            <img src="images/${member.image}" alt="Logo de ${member.name}" loading="lazy" width="200" height="200">
+            <img src="images/${member.image}" alt="Logo of ${member.name}" loading="lazy" width="200" height="200">
             <h3>${member.name}</h3>
             <p class="tagline">${member.tagline}</p>
             <div class="info">
-                <p><strong>Dirección:</strong> ${member.address}</p>
-                <p><strong>Teléfono:</strong> ${member.phone}</p>
-                <p><a href="${member.website}" target="_blank">Visitar Sitio Web</a></p>
+                <p><strong>Address:</strong> ${member.address}</p>
+                <p><strong>Phone number:</strong> ${member.phone}</p>
+                <p><a href="${member.website}" target="_blank">Visit website</a></p>
             </div>
-            <p class="membership-level">Nivel: ${levels[member.membershipLevel]}</p>
+            <p class="membership-level">Level: ${levels[member.membershipLevel]}</p>
         `;
         container.appendChild(card);
     });
