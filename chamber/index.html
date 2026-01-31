@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Cámara de Comercio de Caracas</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css" media="(min-width: 768px)">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="icon" href="images/favicon.ico">
+    <meta name="description" content="Home Page of the Chamber of Commerce of Caracas, Find services, contacts, and opportunities in the capital.">
+    <meta name="author" content="Ramón Lamas">
+    <meta property="og:title" content="Home Page of the Chamber of Commerce of Caracas">
+    <meta property="og:description" content="Join in the Chamber of Commerce of Caracas, Meet and discover new opportunities to grow your business.">
+    <meta property="og:url" content="https://luckyrambly.github.io/wdd231/chamber/index.html">
+    <meta property="og:image" content="https://raw.githubusercontent.com/LuckyRambly/wdd231/refs/heads/main/chamber/images/og-directory-preview.jpg">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="header-content">
+        <div class="logo-area">
+            <img src="images/c_logo.png" alt="Logo" class="logo">
+            <h1 class="site-title">Cámara de Comercio de Caracas</h1>
+        </div>
+        <div class="utility-area">
+            <button id="modeToggle" aria-label="Cambiar modo">🌙</button>
+            <button id="menuButton" aria-label="Abrir menú">☰</button>
+        </div>
+        <nav>
+            <ul id="navigation" class="navigation-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="discover.html">Discover</a></li>
+                <li><a href="directory.html">Business Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<main class="home-container">
+    <section class="hero">
+        <picture>
+            <source srcset="images/hero1600.webp" media="(min-width: 768px)">
+            <img src="images/hero600.webp" alt="Panoramic picture of Caracas" class="hero-img" width="1600" height="600">
+        </picture>
+        <div class="hero-cta">
+            <h2>Conecting Caracas Business</h2>
+            <a href="join.html" class="cta-link">Join the Chamber</a>
+        </div>
+    </section>
+
+    <div class="home-info-grid">
+        <section class="events card">
+            <h3>Next Events:</h3>
+            <div id="event-list">Loading info...</div>
+        </section>
+
+        <section class="weather card">
+            <h3>Weather Information</h3>
+            <div class="current-weather">
+                <h4>Current Temp</h4>
+                <div class="weather-main">
+                    <img id="weather-icon" src="" alt="">
+                    <span id="current-temp"></span>
+                </div>
+                <figcaption id="weather-desc"></figcaption>
+            </div>
+
+            <div class="forecast">
+                <h4>3-Day Forecast</h4>
+                <div id="forecast-info"></div>
+            </div>
+        </section>
+    </div>
+    <div class="spotlights">
+        <div id="spotlight-cards"></div>
+    </div>
+</main>
+<footer>
+    <div class="footer-grid">
+        <div class="footer-contact">
+            <h3>Chamber of commerce of Caracas</h3>
+            <p>Av. Francisco de Miranda, La California Norte</p>
+            <p>Phone number: +58 212-000-0000</p>
+            <p>E-mail: contacto@camaracaracas.org.ve</p>
+            <div class="social-links">
+                <a href="#"><img src="images/youtube_icon.svg" alt="YouTube"></a>
+                <a href="#"><img src="images/x_twitter_icon.svg" alt="Twitter"></a>
+                <a href="#"><img src="images/linkedin_icon.svg" alt="LinkedIn"></a>
+            </div>
+        </div>
+        <div class="footer-project-info">
+            <p>WDD 231 Class Project</p>
+            <p>Ramón Lamas</p>
+            <p>&copy; <span id="currentYear"></span> Chamber of commerce of Caracas</p>
+            <p id="lastModifiedDisplay">Last modification: <span id="lastModified"></span></p>
+        </div>
+    </div>
+</footer>
+<script src="scripts/main.js"></script>
+<script src="scripts/weather.js"></script>
+<script src="scripts/spotlights.js"></script>
+</body>
+</html>
