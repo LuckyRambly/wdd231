@@ -3,22 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | Cámara de Comercio de Caracas</title>
+    <title>Join us | Cámara de Comercio de Caracas</title>
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css" media="(min-width: 768px)">
     <link rel="stylesheet" href="styles/join.css">
     <link rel="icon" href="images/favicon.ico">
-    <meta name="description" content="Home Page of the Chamber of Commerce of Caracas, Find services, contacts, and opportunities in the capital.">
+    <meta name="description" content="Do you want to join into the Chamber of Commerce of Caracas? Join here and let's make it real.">
     <meta name="author" content="Ramón Lamas">
-    <meta property="og:title" content="Home Page of the Chamber of Commerce of Caracas">
-    <meta property="og:description" content="Join in the Chamber of Commerce of Caracas, Meet and discover new opportunities to grow your business.">
-    <meta property="og:url" content="https://luckyrambly.github.io/wdd231/chamber/index.html">
-    <meta property="og:image" content="https://raw.githubusercontent.com/LuckyRambly/wdd231/refs/heads/main/chamber/images/og-directory-preview.jpg">
+    <meta property="og:title" content="Join page and form for the Chamber of Commerce of Caracas.">
+    <meta property="og:description" content="Do you want to join into the Chamber of Commerce of Caracas? Join here and let's make it real.">
+    <meta property="og:url" content="https://luckyrambly.github.io/wdd231/chamber/join.html">
+    <meta property="og:image" content="https://luckyrambly.github.io/wdd231/chamber/images/og-directory-preview.jpg">
     <meta property="og:type" content="website">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script src="scripts/main.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+    <script src="scripts/join.js" defer></script>
 </head>
 <body>
 <header>
@@ -83,40 +86,41 @@
         </form>
     </section>
     <section class="membership-cards">
-        <div class="card animate-slide-up">
-            <h3>Non Profit Level</h3>
-            <button type="button" class="info-btn" onclick="document.getElementById('modal-np').showModal()">Learn More</button>
-        </div>
-        <div class="card animate-slide-up">
-            <h3>Bronze Level</h3>
-            <button type="button" class="info-btn" onclick="document.getElementById('modal-bronze').showModal()">Learn More</button>
-        </div>
-        <div class="card animate-slide-up">
-            <h3>Silver Level</h3>
-            <button type="button" class="info-btn" onclick="document.getElementById('modal-silver').showModal()">Learn More</button>
-        </div>
-        <div class="card animate-slide-up">
-            <h3>Gold Level</h3>
-            <button type="button" class="info-btn" onclick="document.getElementById('modal-gold').showModal()">Learn More</button>
-        </div>
+    <div class="card animate-slide-up">
+        <h3>Non Profit Level</h3>
+        <button type="button" class="info-btn" data-modal="modal-np">Learn More</button>
+    </div>
+    <div class="card animate-slide-up">
+        <h3>Bronze Level</h3>
+        <button type="button" class="info-btn" data-modal="modal-bronze">Learn More</button>
+    </div>
+    <div class="card animate-slide-up">
+        <h3>Silver Level</h3>
+        <button type="button" class="info-btn" data-modal="modal-silver">Learn More</button>
+    </div>
+    <div class="card animate-slide-up">
+        <h3>Gold Level</h3>
+        <button type="button" class="info-btn" data-modal="modal-gold">Learn More</button>
+    </div>
     </section>
+
     <dialog id="modal-np">
-        <button class="close-modal" onclick="this.closest('dialog').close()">X</button>
+        <button class="close-modal">X</button>
         <h2>Non Profit Membership</h2>
-        <p>Free for non-profit organizations. Includes: Directory listing and basic event access. Perfect to get involded in this new age of business!</p>
+        <p>Free for non-profit organizations. Includes: Directory listing and basic event access. Perfect to get involved in this new age of business!</p>
     </dialog>
     <dialog id="modal-bronze">
-        <button class="close-modal" onclick="this.closest('dialog').close()">X</button>
+        <button class="close-modal">X</button>
         <h2>Bronze Membership</h2>
         <p>Affordable entry for startups. Includes: Training sessions and business listing. Great to boost your business.</p>
     </dialog>
     <dialog id="modal-silver">
-        <button class="close-modal" onclick="this.closest('dialog').close()">X</button>
+        <button class="close-modal">X</button>
         <h2>Silver Membership</h2>
         <p>For growing businesses. Includes: Social media spotlight and lunch discounts. The sandwiches are wonderful. BELIEVE ME.</p>
     </dialog>
     <dialog id="modal-gold">
-        <button class="close-modal" onclick="this.closest('dialog').close()">X</button>
+        <button class="close-modal">X</button>
         <h2>Gold Membership</h2>
         <p>Premium benefits. Includes: Front-page advertising, event sponsorships, and VIP networking. If you want the best of the best to not only grow, but become emblem in your industry, this is for you.</p>
     </dialog>
@@ -142,8 +146,5 @@
         </div>
     </div>
 </footer>
-<script src="scripts/main.js"></script>
-<script src="scripts/thankyou.js"></script>
-<script src="scripts/join.js"></script>
 </body>
 </html>

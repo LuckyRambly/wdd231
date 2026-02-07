@@ -1,3 +1,6 @@
+header, header h1, header a {
+    color: var(--white) !important;
+}
 .thankyou-main {
     padding: 3rem 5%;
     max-width: 800px;
