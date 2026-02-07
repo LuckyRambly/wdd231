@@ -1,70 +1,72 @@
-.header-content {
-    flex-wrap: nowrap;
-    padding: 0 20px;
-}
-.logo-area {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    flex-shrink: 0;
-}
-.site-title {
-    display: block;
-    font-size: 1.4rem;
-    margin: 0;
-    white-space: nowrap;
-}
-nav {
-    width: auto;
-    margin: 0 auto;
-    background: none;
-}
-.navigation-links {
-    display: flex !important; 
-    flex-direction: row;
-    gap: 10px;
-}
-.navigation-links a {
-    border: none;
-    padding: 0.5rem 1rem;
-    white-space: nowrap;
-}
-.utility-area {
-    order: 3;
-}
-#modeToggle {
-    font-size: 1.5rem;
-    padding: 5px;
-}
-#menuButton {
-    display: none;
-}
-.directory-controls {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-.member-display-grid { 
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
-    max-width: 1200px; 
-    margin: 0 auto; 
-}
-.member-display-list section { 
-    display: grid; 
-    grid-template-columns: 2fr 1fr 1fr; 
-    max-width: 1000px; 
-    margin: 0 auto; 
-    text-align: left; 
-}
-.footer-grid { 
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    max-width: 1200px; 
-    margin: 0 auto; 
-    text-align: left; 
-}
-.social-links { 
-    justify-content: flex-start; 
+@media (min-width: 768px) {
+    .header-content {
+        flex-wrap: nowrap;
+        padding: 0 20px;
+    }
+    .logo-area {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        flex-shrink: 0;
+    }
+    .site-title {
+        display: block;
+        font-size: 1.4rem;
+        margin: 0;
+        white-space: nowrap;
+    }
+    nav {
+        width: auto;
+        margin: 0 auto;
+        background: none;
+    }
+    .navigation-links {
+        display: flex !important; 
+        flex-direction: row;
+        gap: 10px;
+    }
+    .navigation-links a {
+        border: none;
+        padding: 0.5rem 1rem;
+        white-space: nowrap;
+    }
+    .utility-area {
+        order: 3;
+    }
+    #modeToggle {
+        font-size: 1.5rem;
+        padding: 5px;
+    }
+    #menuButton {
+        display: none;
+    }
+    .directory-controls {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+    .member-display-grid { 
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); 
+        max-width: 1200px; 
+        margin: 0 auto; 
+    }
+    .member-display-list section { 
+        display: grid; 
+        grid-template-columns: 2fr 1fr 1fr; 
+        max-width: 1000px; 
+        margin: 0 auto; 
+        text-align: left; 
+    }
+    .footer-grid { 
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        max-width: 1200px; 
+        margin: 0 auto; 
+        text-align: left; 
+    }
+    .social-links { 
+        justify-content: flex-start; 
+    }
 }

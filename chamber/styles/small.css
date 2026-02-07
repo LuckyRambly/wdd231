@@ -35,6 +35,7 @@ header {
     background-color: var(--primary-color);
     padding: 1rem 5%;
     border-bottom: 5px solid var(--secondary-color);
+    color: var(--white);
 }
 .header-content {
     display: flex;
@@ -111,7 +112,6 @@ nav {
     border: 1px solid var(--primary-color); 
     color: var(--primary-color);
 }
-
 #gridView {
     border-radius: 8px 0 0 8px;
 }
@@ -124,7 +124,6 @@ nav {
     background: var(--primary-color); 
     color: var(--white); 
 }
-
 #memberContainer {
     padding: 20px;
 }
@@ -142,6 +141,7 @@ nav {
     border: 1px solid #ddd; 
     border-radius: 12px;
     padding: 20px;
+    color: var(--text-color);
 }
 .member-display-grid img { 
     display: block;
@@ -157,7 +157,6 @@ nav {
     padding: 10px; 
     border-bottom: 1px solid #eee; 
 }
-
 .member-display-list img, 
 .member-display-list .tagline { 
     display: none; 
