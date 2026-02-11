@@ -1,0 +1,128 @@
+/* -Main- */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+main h1 {
+    color: var(--primary-color);
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-size: 2.2rem;
+}
+
+.intro-text {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 2rem auto;
+    color: var(--text-color);
+}
+
+.visit-banner {
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+    padding: 1rem;
+    text-align: center;
+    border-left: 5px solid var(--secondary-color);
+    font-weight: 600;
+    margin-bottom: 2rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* -Grid- */
+.grid-container {
+    display: grid;
+    gap: 20px;
+    /* Mobile */
+    grid-template-areas:
+        "avila" "panteon" "hacienda" "bellasartes"
+        "ccct" "teatromuni" "parqueeste" "universitaria";
+}
+
+.card {
+    background: var(--white);
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: box-shadow 0.3s ease;
+}
+
+.card h2 {
+    margin: 0;
+    font-size: 1.4rem;
+}
+
+.card figure {
+    margin: 0;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.card address {
+    font-style: normal;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.card button {
+    margin-top: auto;
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: none;
+    padding: 0.8rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.3s ease;
+}
+
+.card button:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+/* -Responsive Medium (641px-1024px) */
+@media (min-width: 641px) {
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "avila panteon"
+            "hacienda bellasartes"
+            "ccct teatromuni"
+            "parqueeste universitaria";
+    }
+}
+
+/* -Responsive Large (1025px+) */
+@media (min-width: 1025px) {
+    .grid-container {
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+            "avila avila panteon hacienda"
+            "bellasartes ccct teatromuni teatromuni"
+            "parqueeste parqueeste universitaria universitaria";
+    }
+
+    /* Hover Desktop */
+    @media (hover: hover) {
+        .card:hover {
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+        }
+        .card:hover img {
+            transform: scale(1.08);
+            filter: saturate(1.2);
+        }
+    }
+}
