@@ -17,26 +17,43 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // Send
-    signupForm.addEventListener('submit', (event) => {
-        // Validation
-        const isInvalid = !validateForm();
+    signupForm.addEventListener('submit', async (event) => {
+        event.preventDefault(); // asynchonous
 
-        if (isInvalid) {
-            event.preventDefault(); // stop if theres a nerror
+        // Validation
+        if (!validateForm()) {
             console.log("Failed validation.");
-        } else {
-            // If everything is fine, we send you to thankyou.html
+            return;
+        }
+
+        // Asynchronous process with try/catch block
+        try {
+            console.log("Processing form data...");
+            
+            // Prepare data for redirection
+            const formData = new FormData(signupForm);
+            const queryParams = new URLSearchParams(formData).toString();
+
+            // 1.5s delay
+            await new Promise((resolve) => setTimeout(resolve, 1500));
+
+            // Clean up and redirect
             localStorage.removeItem('nert_draft_name');
             console.log("Perfect validation. Redirecting...");
+            window.location.href = `thankyou.html?${queryParams}`;
+
+        } catch (error) {
+            // Error handling for the asynchronous operation
+            console.error("Submission error:", error);
+            alert("An error occurred while processing your request. Please try again.");
         }
     });
 
-    // Validation process (Within)
+    // Validation process
     function validateForm() {
         const phoneField = document.querySelector('#phone');
         const motivationField = document.querySelector('#motivation');
 
-        // Validating the existence of this fields
         if (!phoneField || !motivationField) {
             console.error("We didnt find the fields.");
             return false;
@@ -52,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
             return false;
         }
 
-        // Textarea (10 letters minimu)
+        // Textarea (10 letters minimum)
         if (motivation.length < 10) {
             alert("ERROR: Write at least 10 characters.");
             return false;
