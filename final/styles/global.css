@@ -207,6 +207,10 @@ a, button {
     text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
 }
 
+.slide-content h2 {
+    color: var(--white);
+}
+
 .carousel-btn {
     position: absolute;
     top: 50%;
@@ -311,7 +315,12 @@ a, button {
     filter: drop-shadow(0 10px 20px rgba(0,0,0,0.5));
 }
 
-.agent-info { text-align: center; }
+.agent-info { text-align: center;
+}
+
+.agent-info p {
+    color: var(--white);
+}
 
 .agent-name {
     font-size: 1.8rem;
