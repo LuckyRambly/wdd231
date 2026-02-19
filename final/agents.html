@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agents - NERT</title>
+    <meta name="description" content="Official list of all agents and volunteers who are part of NERT, their statistics, qualities, and specialties.">
+    <meta name="author" content="Ramón Lamas">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/agents.css">
+    <link rel="stylesheet" href="styles/tablet.css" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="styles/desktop.css" media="screen and (min-width: 1024px)">
+    <link rel="icon" href="images/hexagon-white.ico">
+    <!-- Facebook Open Graph Properties -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Agents - NERT">
+    <meta property="og:description" content="Official list of all agents and volunteers who are part of NERT, their statistics, qualities, and specialties.">
+    <meta property="og:image" content="https://luckyrambly.github.io/wdd231/final/images/og-preview.jpg">
+    <meta property="og:url" content="https://luckyrambly.github.io/wdd231/final/agents.html">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Agents | NERT">
+    <meta name="twitter:description" content="Official list of all agents and volunteers who are part of NERT, their statistics, qualities, and specialties.">
+    <meta name="twitter:image" content="https://luckyrambly.github.io/wdd231/final/images/og-preview.jpg">
+    <!-- Scripts -->
+    <script src="scripts/header-footer-core.js" defer></script>
+    <script src="scripts/agents.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <a href="index.html" class="nav-branding">
+                <div class="logo-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="nav-logo-svg">
+                        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                    </svg>
+                </div>
+                <h1 class="nav-title">NERT</h1>
+            </a>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+                <span class="hamburger"></span>
+            </button>
+
+            <div class="nav-links" id="nav-menu">
+                <a href="agents.html" class="nav-item">Agents</a>
+                <a href="signup.html" class="nav-item nav-btn-special">Sign.Up</a>
+            </div>
+        </nav>
+        <div class="overlay" id="overlay"></div>
+    </header>
+
+    <main class="agent-catalog">
+        <section class="agent-catalog__intro">
+            <h1 class="agent-catalog__main-title">Official list of agents</h1>
+            <p class="agent-catalog__subtitle">Expedition Rescue Team fron Nikoria.</p>
+        </section>
+
+        <section class="agent-catalog__tools">
+            <div class="agent-catalog__filter-group">
+                <label for="agent-catalog-filter" class="agent-catalog__label">Speciality:</label>
+                <select id="agent-catalog-filter" class="agent-catalog__select">
+                    <option value="all">All</option>
+                    <option value="fire">Fireeater</option>
+                    <option value="water">Aqua Rescue</option>
+                    <option value="grass">Supervivence</option>
+                    <option value="electric">Dark Enviroments</option>
+                </select>
+            </div>
+                
+            <div id="agent-catalog-visits" class="agent-catalog__visit-display">
+            </div>
+        </section>
+
+        <div id="agent-catalog-grid-container" class="agent-catalog__grid">
+        </div>
+
+        <dialog id="agent-catalog-modal" class="agent-catalog__modal">
+            <div id="agent-catalog-modal-content" class="agent-catalog__modal-body">
+            </div>
+
+            <div class="agent-catalog__modal-footer">
+                <button id="agent-catalog-close-modal" class="agent-catalog__modal-close-btn">Close</button>
+            </div>
+        </dialog>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Our Web</h4>
+                <nav class="footer-nav">
+                    <a href="index.html">Home</a>
+                    <a href="agents.html">Agents</a>
+                    <a href="signup.html">Sign Up</a>
+                </nav>
+                <p class="legal-disclaimer">
+                    NERT and Nikoria are fictional objects created for a student creative activity. They are not real entities, nor do they belong to or are associated with The Pokémon Company, Game Freak, or Nintendo.
+                </p>
+            </div>
+
+            <div class="footer-section footer-center">
+                <p>&copy; <span id="current-year"></span> Ramón Lamas</p>
+                <p>This website was developed by Ramón Lamas</p>
+                <p class="academic-info">Web Project for BYU-Idaho</p>
+                <small>Last Update: <span id="last-modified"></span></small>
+            </div>
+
+            <div class="footer-section">
+                <h4>Proffesional Contact</h4>
+                <div class="social-links">
+                    <a href="#" target="_blank">LinkedIn</a>
+                    <a href="#" target="_blank">GitHub</a>
+                    <a href="#" target="_blank">Portafolio</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

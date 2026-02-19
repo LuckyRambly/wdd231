@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - NERT</title>
+    <meta name="description" content="The main NERT website where you can find out the latest news from the region, purchase supplies, view our agents, request our services, or join us.">
+    <meta name="author" content="Ramón Lamas">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/tablet.css" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="styles/desktop.css" media="screen and (min-width: 1024px)">
+    <link rel="icon" href="images/hexagon-white.ico">
+    <!-- Facebook and Twitter/X Open Graph Properties -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Home - NERT">
+    <meta property="og:description" content="The main NERT website where you can find out the latest news from the region, purchase supplies, view our agents, request our services, or join us">
+    <meta property="og:image" content="https://luckyrambly.github.io/wdd231/final/images/og-preview.jpg">
+    <meta property="og:url" content="https://luckyrambly.github.io/wdd231/final/index.html">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Home | NERT">
+    <meta name="twitter:description" content="The main NERT website where you can find out the latest news from the region, purchase supplies, view our agents, request our services, or join us.">
+    <meta name="twitter:image" content="https://luckyrambly.github.io/wdd231/final/images/og-preview.jpg">
+    <!-- Scripts -->
+    <script src="scripts/header-footer-core.js" defer></script>
+    <script src="scripts/carrusel.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <a href="index.html" class="nav-branding">
+                <div class="logo-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="nav-logo-svg">
+                        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                    </svg>
+                </div>
+                <h1 class="nav-title">NERT</h1>
+            </a>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+                <span class="hamburger"></span>
+            </button>
+
+            <div class="nav-links" id="nav-menu">
+                <a href="agents.html" class="nav-item">Agents</a>
+                <a href="signup.html" class="nav-item nav-btn-special">Sign.Up</a>
+            </div>
+        </nav>
+        <div class="overlay" id="overlay"></div>
+    </header>
+
+    <main>
+
+        <section class="carousel" aria-label="NERT Gallery">
+            <div class="carousel-container">
+                <div class="carousel-track" id="track">
+                    
+                    <div class="carousel-slide">
+                        <picture>
+                            <source srcset="images/fire-nert-pc.webp" media="(min-width: 1024px)">
+                            <source srcset="images/fire-nert-tablet.webp" media="(min-width: 768px)">
+                            <img src="images/fire-nert-mobile.webp" alt="Misión de Rescate Táctico" class="carousel-img">
+                        </picture>
+                        <div class="slide-content">
+                            <h3>Special Task Force</h3>
+                            <p>Inmediate responde against natural disasters, incursions and cataclysm events (Not on Christmass) .</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-slide">
+                        <picture>
+                            <source srcset="images/teamwork-nert-pc.webp" media="(min-width: 1024px)">
+                            <source srcset="images/teamwork-nert-tablet.webp" media="(min-width: 768px)">
+                            <img src="images/teamwork-nert-mobile.webp" alt="Tecnología NERT" class="carousel-img">
+                        </picture>
+                        <div class="slide-content">
+                            <h3>See our agents</h3>
+                            <p>Get a look into our great catalog of agents of all experience levels.</p>
+                        </div>
+                    </div>
+
+                    <div class="carousel-slide">
+                        <picture>
+                            <source srcset="images/warehouse-nert-pc.webp" media="(min-width: 1024px)">
+                            <source srcset="images/warehouse-nert-tablet.webp" media="(min-width: 768px)">
+                            <img src="images/warehouse-nert-mobile.webp" alt="Unirse a NERT" class="carousel-img">
+                        </picture>
+                        <div class="slide-content">
+                            <h3>Get gear and med aid</h3>
+                            <p>You can get our same teamgear, provisions and medkits that we use in our most dangerous missions too.</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <button class="carousel-btn prev" id="prevBtn" aria-label="Anterior">&#10094;</button>
+            <button class="carousel-btn next" id="nextBtn" aria-label="Siguiente">&#10095;</button>
+        </section>
+
+        <div class="ticker-separator">
+            <div class="ticker-wrapper">
+                <div class="ticker-item">
+                    <img src="images/square-stop.svg" alt="NERT-icon">
+                    <span>NIKORIA EXPEDITION RESCUE TEAM</span>
+                    <img src="images/square-stop.svg" alt="NERT-icon">
+                    <span>UNIT 01 - STATUS: ACTIVE</span>
+                    <img src="images/square-stop.svg" alt="NERT-icon">
+                    <span>EMERGENCY AT LIGHTOWN</span>
+                </div>
+                <div class="ticker-item">
+                    <img src="images/square-stop.svg" alt="NERT-icon">
+                    <span>NIKORIA EXPEDITION RESCUE TEAM</span>
+                    <img src="images/square-stop.svg" alt="NERT-icon">
+                    <span>UNIT 01 - STATUS: ACTIVE</span>
+                    <img src="images/square-stop.svg" alt="NERT-icon">
+                    <span>EMERGENCY AT LIGHTOWN</span>
+                </div>
+            </div>
+        </div>
+
+        <section class="agent-month">
+            <div class="agent-container">
+                <div class="agent-visual">
+                    <div class="white-circle"></div>
+                    <img src="images/riolu.webp" alt="Best agent of the month" class="agent-img">
+                </div>
+
+                <div class="agent-info">
+                    <h2 class="agent-name">Riolu</h2>
+                    <p class="agent-title">Specialist in space-time incursions</p>
+                    
+                    <ul class="agent-achievements">
+                        <li>New promise that surpassed all squads in one month.</li>
+                        <li>He beat up Dialga, Palkia, and Darkrai with seeds... Really.</li>
+                        <li>Highest number of operations and victories since its integration.</li>
+                        <li>You stole all the boss's candy without getting caught (but we know it was you).</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <div class="ticker-separator">
+            <div class="ticker-wrapper">
+                <div class="ticker-item">
+                    <img src="images/square.svg" alt="NERT-icon">
+                    <span>NIKORIA EXPEDITION RESCUE TEAM</span>
+                    <img src="images/square.svg" alt="NERT-icon">
+                    <span>UNIT 02 - STATUS: SLEEPING... WHY?</span>
+                    <img src="images/square.svg" alt="NERT-icon">
+                    <span>SOMEONE TOOK OUR COOKIES, SEND HELP</span>
+                </div>
+                <div class="ticker-item">
+                    <img src="images/square.svg" alt="NERT-icon">
+                    <span>NIKORIA EXPEDITION RESCUE TEAM</span>
+                    <img src="images/square.svg" alt="NERT-icon">
+                    <span>UNIT 02 - STATUS: SLEEPING... WHY?</span>
+                    <img src="images/square.svg" alt="NERT-icon">
+                    <span>SOMEONE TOOK OUR COOKIES, SEND HELP</span>
+                </div>
+            </div>
+        </div>
+
+        <section class="join-nert">
+            <div class="join-container">
+                <div class="join-visual">
+                    <img src="images/shield-plus.svg" alt="Join NERT Emblem" class="join-icon">
+                </div>
+
+                <div class="join-content">
+                    <h2 class="join-title">Join the NERT network</h2>
+                    <p class="join-text">
+                        Want to join our expedition teams? Want the best supplies for your explorations? Want to request help for a mission? Want the latest news from the region? Join our network to get access to all of this and more.
+                    </p>
+                    <a href="signup.html" class="btn-signup-join">Sign Up</a>
+                </div>
+            </div>
+        </section>
+
+        <div class="ticker-separator">
+            <div class="ticker-wrapper">
+                <div class="ticker-item">
+                    <img src="images/square-stop.svg" alt="NERT-icon">
+                    <span>NIKORIA EXPEDITION RESCUE TEAM</span>
+                    <img src="images/square-stop.svg" alt="NERT-icon">
+                    <span>UNIT 03 - STATUS: UNKNOWN</span>
+                    <img src="images/square-stop.svg" alt="NERT-icon">
+                    <span>ENTITIES FROM ULTRA-SPACE ARE INVADING STEAMWOOD.</span>
+                </div>
+                <div class="ticker-item">
+                    <img src="images/square-stop.svg" alt="NERT-icon">
+                    <span>NIKORIA EXPEDITION RESCUE TEAM</span>
+                    <img src="images/square-stop.svg" alt="NERT-icon">
+                    <span>UNIT 03 - STATUS: UNKNOWN</span>
+                    <img src="images/square-stop.svg" alt="NERT-icon">
+                    <span>ENTITIES FROM ULTRA-SPACE ARE INVADING STEAMWOOD</span>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Our Web</h4>
+                <nav class="footer-nav">
+                    <a href="index.html">Home</a>
+                    <a href="agents.html">Agents</a>
+                    <a href="signup.html">Sign Up</a>
+                </nav>
+                <p class="legal-disclaimer">
+                    NERT and Nikoria are fictional objects created for a student creative activity. They are not real entities, nor do they belong to or are associated with The Pokémon Company, Game Freak, or Nintendo.
+                </p>
+            </div>
+
+            <div class="footer-section footer-center">
+                <p>&copy; <span id="current-year"></span> Ramón Lamas</p>
+                <p>This website was developed by Ramón Lamas</p>
+                <p class="academic-info">Web Project for BYU-Idaho</p>
+                <small>Last Update: <span id="last-modified"></span></small>
+            </div>
+
+            <div class="footer-section">
+                <h4>Proffesional Contact</h4>
+                <div class="social-links">
+                    <a href="#" target="_blank">LinkedIn</a>
+                    <a href="#" target="_blank">GitHub</a>
+                    <a href="#" target="_blank">Portafolio</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

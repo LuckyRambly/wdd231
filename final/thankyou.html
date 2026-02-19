@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank you!</title>
+    <meta name="description" content="Thank you for choosing us. You will receive a response or confirmation of your NERT ID shortly.">
+    <meta name="author" content="Ramón Lamas">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/thankyou.css">
+    <link rel="stylesheet" href="styles/tablet.css" media="screen and (min-width: 768px)">
+    <link rel="stylesheet" href="styles/desktop.css" media="screen and (min-width: 1024px)">
+    <link rel="icon" href="images/hexagon-white.ico">
+    <!-- Facebook Open Graph Properties -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Thank you!">
+    <meta property="og:description" content="Thank you for choosing us. You will receive a response or confirmation of your NERT ID shortly.">
+    <meta property="og:image" content="https://luckyrambly.github.io/wdd231/final/images/og-preview.jpg">
+    <meta property="og:url" content="https://luckyrambly.github.io/wdd231/final/thankyou.html">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Thank you!">
+    <meta name="twitter:description" content="Thank you for choosing us. You will receive a response or confirmation of your NERT ID shortly.">
+    <meta name="twitter:image" content="https://luckyrambly.github.io/wdd231/final/images/og-preview.jpg">
+    <!-- Scripts -->
+    <script src="scripts/header-footer-core.js" defer></script>
+    <script src="scripts/thankyou.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <a href="index.html" class="nav-branding">
+                <div class="logo-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" class="nav-logo-svg">
+                        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+                    </svg>
+                </div>
+                <h1 class="nav-title">NERT</h1>
+            </a>
+
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú">
+                <span class="hamburger"></span>
+            </button>
+
+            <div class="nav-links" id="nav-menu">
+                <a href="agents.html" class="nav-item">Agents</a>
+                <a href="signup.html" class="nav-item nav-btn-special">Sign.Up</a>
+            </div>
+        </nav>
+        <div class="overlay" id="overlay"></div>
+    </header>
+
+    <main class="thank-you-nert">
+        <section class="thank-you-nert__content">
+            <h1 class="thank-you-nert__title">DOSSIER RECEPTED!</h1>
+            <p class="thank-you-nert__message">Your data has been processed succesfully:</p>
+            
+            <div id="summary-container" class="thank-you-nert__summary">
+                <p><strong>Loading data from satellite...</strong></p>
+            </div>
+
+            <a href="index.html" class="thank-you-nert__btn">Finish conecction</a>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>Our Web</h4>
+                <nav class="footer-nav">
+                    <a href="index.html">Home</a>
+                    <a href="agents.html">Agents</a>
+                    <a href="signup.html">Sign Up</a>
+                </nav>
+                <p class="legal-disclaimer">
+                    NERT and Nikoria are fictional objects created for a student creative activity. They are not real entities, nor do they belong to or are associated with The Pokémon Company, Game Freak, or Nintendo.
+                </p>
+            </div>
+
+            <div class="footer-section footer-center">
+                <p>&copy; <span id="current-year"></span> Ramón Lamas</p>
+                <p>This website was developed by Ramón Lamas</p>
+                <p class="academic-info">Web Project for BYU-Idaho</p>
+                <small>Last Update: <span id="last-modified"></span></small>
+            </div>
+
+            <div class="footer-section">
+                <h4>Proffesional Contact</h4>
+                <div class="social-links">
+                    <a href="#" target="_blank">LinkedIn</a>
+                    <a href="#" target="_blank">GitHub</a>
+                    <a href="#" target="_blank">Portafolio</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
